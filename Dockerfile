@@ -16,7 +16,7 @@ ENV MB_DB_HOST: 127.0.0.1
 ENV JAVA_OPTS "-XX:+IgnoreUnrecognizedVMOptions -Dfile.encoding=UTF-8 --add-opens=java.base/java.net=ALL-UNNAMED --add-modules=java.xml.bind"
 
 ADD https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 ./cloud_sql_proxy
-ADD http://downloads.metabase.com/v0.28.1/metabase.jar ./metabase.jar
+ADD http://downloads.metabase.com/v0.29.3/metabase.jar ./metabase.jar
 
 RUN chmod +x ./cloud_sql_proxy
 
